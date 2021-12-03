@@ -1,5 +1,6 @@
 # Data Pipeline Architecture
-![Report 2](https://user-images.githubusercontent.com/34235886/144294583-79885449-13da-46ae-8466-637808fcbf76.png)
+![Report 2](https://user-images.githubusercontent.com/34235886/144624746-6f04f94e-ffb5-4a9d-ae78-d50e15bef7b5.png)
+
 Both processing pipelines have their ending in common. The batch and streaming data processing pipelines save their results in the same data sink, namely BigQuery -used as data warehouse as well as serving layer-. The dashboard -Google’s Data Studio/Flask API- retrieves data from this data warehouse in order to generate the visualizations.
 
 Firstly, the batch processing pipeline is straightforwardly implemented. After processing, data gets directly uploaded in the data warehouse BigQuery, available for visualization. 
